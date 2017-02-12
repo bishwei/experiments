@@ -6,3 +6,9 @@
 .boardCell {
   border: 1px solid #DDD;
 }
+
+.shape {
+  &.S {
+    background-color: pink;
+  }
+}

@@ -5,15 +5,21 @@ import styles from './styles.scss';
 
 type PropType = {
   isOccupied: boolean,
-  width: number,
+  shape: string,
+  size: number,
 };
 
 const BoardCell = ({
   isOccupied = false,
+  shape,
   size,
 }: PropType) =>
   <div
-    className={ classnames(styles.boardCell, { 'is-occupied': isOccupied }) }
+    className={ classnames(styles.boardCell, {
+      'is-occupied': isOccupied,
+      [styles.shape]: !!shape,
+      [styles[shape]]: !!shape,
+    }) }
     style={ { height: `${size}%`, width: `${size}%` } }
   />;
 
