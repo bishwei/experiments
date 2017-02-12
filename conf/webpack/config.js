@@ -42,11 +42,28 @@ module.exports = {
       },
       {
         test: /\.s?css$/,
+        exclude: /(node_modules)/,
         loader: ExtractTextPlugin.extract({
           fallback: 'style-loader',
           loader: [{
             loader: 'css-loader',
             options: { importLoaders: 1, modules: true },
+          }, {
+            loader: 'sass-loader',
+          }, {
+            loader: 'postcss-loader',
+          }],
+        }),
+      },
+      {
+        test: /\.s?css$/,
+        include: /(node_modules)/,
+        exclude: /(src)/,
+        loader: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          loader: [{
+            loader: 'css-loader',
+            options: { importLoaders: 1, modules: false },
           }, {
             loader: 'sass-loader',
           }, {

@@ -13,9 +13,9 @@ const SHAPES = {
 
 const pieces = [{
   shape: SHAPES.S,
-  rotation: 0,
-  x: 0,
-  y: 1,
+  rotation: 1,
+  x: 6,
+  y: 8,
 }];
 
 const Tetris = () =>

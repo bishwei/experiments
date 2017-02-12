@@ -1,11 +1,15 @@
 import React from 'react';
 import AsyncRoute from 'components/AsyncRoute';
 
+const CodeEditorRoute = () =>
+  <AsyncRoute path='/editor' getComponent={ () => System.import('components/CodeEditor') } />;
+
 const TetrisRoute = () =>
-  <AsyncRoute pattern='/tetris' getComponent={ () => System.import('components/Tetris') } />;
+  <AsyncRoute path='/tetris' getComponent={ () => System.import('components/Tetris') } />;
 
 const Routes = () =>
   <div>
+    <CodeEditorRoute />
     <TetrisRoute />
   </div>;
 

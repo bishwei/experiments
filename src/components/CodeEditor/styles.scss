@@ -1,0 +1,17 @@
+.codeEditor {
+  display: flex;
+  height: 100%;
+  width: 100%;
+
+  .editorPane {
+    flex: 1;
+  }
+
+  .editor {
+    
+  }
+
+  .resultPane {
+    flex: 1;
+  }
+}
