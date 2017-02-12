@@ -46,7 +46,7 @@ module.exports = {
           fallback: 'style-loader',
           loader: [{
             loader: 'css-loader',
-            options: { importLoaders: 1 },
+            options: { importLoaders: 1, modules: true },
           }, {
             loader: 'sass-loader',
           }, {

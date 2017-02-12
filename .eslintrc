@@ -5,6 +5,7 @@
     "comma-dangle": ["error", "only-multiline"],
     "jsx-quotes": ["error", "prefer-single"],
     "max-len": ["warn"],
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
     "react/jsx-filename-extension": 0,
     "react/jsx-curly-spacing": [2, "always"]
   },
