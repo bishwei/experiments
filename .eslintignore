@@ -1,0 +1,5 @@
+bin/*
+node_modules/*
+routes/*
+webpack.config.js
+app.js

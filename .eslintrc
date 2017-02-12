@@ -1,0 +1,14 @@
+{
+  "parser" : "babel-eslint",
+  "extends": "airbnb",
+  "rules": {
+    "jsx-quotes": ["error", "prefer-single"],
+    "max-len": ["warn"],
+    "react/jsx-filename-extension": 0,
+    "react/jsx-curly-spacing": [2, "always"]
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+  }
+}
