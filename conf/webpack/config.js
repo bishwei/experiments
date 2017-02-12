@@ -3,6 +3,10 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const webpack = require('webpack');
 
 module.exports = {
+  devServer: {
+    port: 3000,
+    historyApiFallback: true,
+  },
   entry: {
     app: path.resolve('src/index.js'),
     hmr: [
